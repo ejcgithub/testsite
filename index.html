@@ -23,6 +23,8 @@
     <!-- Style Sheet -->
     <link href="corporate-agency/css/navigation.css" rel="stylesheet">
     <link href="corporate-agency/css/line-awesome.min.css" rel="stylesheet">
+    <!----START SLIDER--->
+    <link rel="stylesheet" href="https://unpkg.com/beerslider/dist/BeerSlider.css">
     <link href="corporate-agency/css/style.css" rel="stylesheet">
 </head>
 
@@ -446,31 +448,12 @@
 <!-- START ABOUT US -->
 <!-- START BLOG -->
 <section class="half-section p-0 blog blog-bg" id="blog">
-    <h2 class="d-none">heading</h2>
-    <div class="container-fluid">
-        <div class="row align-items-center blog-bg">
-            <div class="col-lg-6 col-md-12 p-0 order-1 order-md-2">
-                <div class="owl-carousel owl-theme owl-split">
-                    <!-- Team-1 -->
-                    <div class="item">
-                        <div class="hover-effect">
-                            <img alt="blog" src="corporate-agency/images/blog-img1.png" class="team-img">
-                        </div>
-                    </div>
-                    <!-- Team-2 -->
-                    <div class="item">
-                        <div class="hover-effect">
-                            <img alt="blog" src="corporate-agency/images/blog-img2.png" class="team-img">
-                        </div>
-                    </div>
-                    <!-- Team-3 -->
-                    <!-- <div class="item">
-                        <div class="hover-effect">
-                            <img alt="blog" src="corporate-agency/images/blog-img3.jpg" class="team-img">
-                        </div>
-                    </div> -->
-                </div>
-            </div>
+  <div id="slider" class="beer-slider" data-beer-label="before">
+  <img src="corporate-agency/images/blog-img1.png" alt="first">
+  <div class="beer-reveal" data-beer-label="after">
+    <img src="corporate-agency/images/blog-img2.png" alt="after">
+  </div>
+</div>
 
             <div class="col-lg-6 col-md-12">
                 <div class="align-items-center pc-0 px-md-5 skill-box">
@@ -1171,6 +1154,11 @@
 <script src="corporate-agency/js/jquery.hoverdir.js"></script>
 <!-- custom script -->
 <script src="vendor/js/contact_us.js"></script>
+    <!----START SLIDER SCRIPTS--->
 <script src="corporate-agency/js/script.js"></script>
+    <script src="https://unpkg.com/beerslider/dist/BeerSlider.js"></script>
+  <script>
+    new BeerSlider(document.getElementById('slider'));
+  </script>
 </body>
 </html>
